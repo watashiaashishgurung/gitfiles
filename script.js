@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 
@@ -11,4 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     homeButton.addEventListener('click', scrollToTop);
     imagesDiv.addEventListener('click', scrollToTop);
+
+    // Scroll to images section on page load
+    imagesDiv.scrollIntoView({ behavior: 'smooth' });
 });
