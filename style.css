@@ -1,0 +1,36 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif; /* Default font for the body */
+}
+
+#story {
+    font-family: 'Georgia', serif; /* Change font for the story text */
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#changeTextButton, #revertTextButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    margin-left: 10px;
+    padding: 10px 12px;
+    background-color: silver;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#revertTextButton {
+    right: 150px; /* Adjust this value to position the second button */
+}
+
+#changeTextButton:hover, #revertTextButton:hover {
+    background-color: #0056b3;
+}
