@@ -2,10 +2,13 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 
-    const changeTextButton = document.querySelector('#changeTextButton');
-    const revertTextButton = document.querySelector('#revertTextButton');
+    const homeButton = document.querySelector('#homebutton');
+    const imagesDiv = document.querySelector('#images');
 
-    changeTextButton.addEventListener('click', () => {
+    const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    };
+
+    homeButton.addEventListener('click', scrollToTop);
+    imagesDiv.addEventListener('click', scrollToTop);
 });
